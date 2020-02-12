@@ -63,7 +63,7 @@ def train_geo_json(request):
           "type": "Feature",
           "geometry": {
             "type": "Point",
-            "coordinates": [ float(station["longitude"]), float(station["latitude"])]
+            "coordinates": [float(station["longitude"]), float(station["latitude"])]
           },
           "properties": {
             "name": station["desc"]
@@ -72,7 +72,6 @@ def train_geo_json(request):
         geo_json["features"].append(stop)
 
         # print(station, station_data[station])
-
 
     return JsonResponse(geo_json, safe=False, json_dumps_params={'indent': 2})
 
