@@ -8,6 +8,8 @@ import json
 from django.http import HttpResponse
 from xml.etree import ElementTree
 from django.http import JsonResponse
+# dynamodb access
+import Database.dynamodb_access as ddba
 
 
 def train(request):
@@ -26,11 +28,14 @@ def train(request):
             if tag == "alias":
                 continue
             station_object[tag] = content
-
-        station_object["type"] = "train"
-        station_data.append(station_object)
-
-    return JsonResponse(station_data, safe=False, json_dumps_params={'indent': 2})
+        if ddba.is_inside_polygon(float(station_object['latitude']), float(station_object['longitude']), ddba.dublin_coordinates) == True:
+            station_object["type"] = "train"
+            station_data.append(station_object)
+            ddba.create_train_stop(stop_id=station_object["code"], name=station_object["desc"],
+                                latitude=station_object["latitude"], longitude=station_object["longitude"])
+        else:
+            pass
+    return None #JsonResponse(station_data, safe=False, json_dumps_params={'indent': 2})
 
 
 def train_geo_json(request):
