@@ -39,6 +39,13 @@ def __read_table_item__(table_name, key_name, key_value):
     response = table.get_item(Key={key_name: key_value})
     return response
 
+def __read_all_table_items__(table_name):
+    """
+    Return item read by primary key.
+    """
+    table = dynamodb.Table(table_name)
+    return table.scan()['Items']
+
 def __add_item__(table_name, table_item):
     """
     Add one item (row) to table. table_item is a dictionary {col_name: value}.
@@ -72,6 +79,10 @@ def get_bus_stop(key_name, key_value):
                                    key_value=key_value)
     return response
 
+def get_all_bus_stops():
+    return __read_all_table_items__('BusStops')
+
+
 def delete_bus_stop(key_name, key_value):
     response = __delete_item__(table_name='BusStops', key_name=key_name,\
                                key_value=key_value)
@@ -90,6 +101,9 @@ def get_train_stop(key_name, key_value):
     response = __read_table_item__(table_name='TrainStops', key_name=key_name,\
                                    key_value=key_value)
     return response
+
+def get_all_train_stops():
+    return __read_all_table_items__('TrainStops')
 
 def delete_train_stop(key_name, key_value):
     response = __delete_item__(table_name='TrainStops', key_name=key_name,\
