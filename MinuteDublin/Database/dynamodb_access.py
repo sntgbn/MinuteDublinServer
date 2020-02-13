@@ -65,12 +65,9 @@ def __delete_item__(table_name, key_name, key_value):
 #################################
 ##             BUS             ##
 #################################
-def create_bus_stop(stop_id, name, latitude, longitude, routes, arrivals,\
-                    is_open):
+def create_bus_stop(stop_id, name, latitude, longitude):
     stop_hash = __create_stop_item__(stop_id=stop_id, name=name, type='bus',
-                                     latitude=latitude, longitude=longitude,
-                                     routes=routes, arrivals=arrivals,
-                                     is_open=is_open)
+                                     latitude=latitude, longitude=longitude)
     db_return = __add_item__(table_name='BusStops', table_item=stop_hash)
     return db_return
 
@@ -115,12 +112,9 @@ def delete_train_stop(key_name, key_value):
 #################################
 ##              LUAS           ##
 #################################
-def create_lua_stop(stop_id, name, latitude, longitude, routes, arrivals,\
-                    is_open):
+def create_lua_stop(stop_id, name, latitude, longitude):
     stop_hash = __create_stop_item__(stop_id=stop_id, name=name, type='lua',
-                                     latitude=latitude, longitude=longitude,
-                                     routes=routes, arrivals=arrivals,
-                                     is_open=is_open)
+                                     latitude=latitude, longitude=longitude)
     db_return = __add_item__(table_name='LuaStops', table_item=stop_hash)
     return db_return
 
