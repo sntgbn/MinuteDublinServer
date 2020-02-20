@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('bus_stop', views.bus_stop, name='bus_stop'),
-    path('bus_stop', views.bus_stop_geo_json, name='train_geo_json'),
+    path('bus_stops', views.bus_stops, name='bus_stops'),
+    path('bus_stops_geo_json', views.bus_stops_geo_json, name='bus_stops_geo_json'),
 ]

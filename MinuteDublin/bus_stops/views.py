@@ -10,7 +10,7 @@ from django.http import JsonResponse
 import dynamodb.dynamodb_access as ddba
 
 
-def bus_stop(request):
+def bus_stops(request):
     json_file = open("bus_stops.json")
     bus_stop_data = json.load(json_file)
     stop_data = []
@@ -27,7 +27,7 @@ def bus_stop(request):
     return JsonResponse(stop_data, safe=False, json_dumps_params={"indent": 2})
 
 
-def bus_stop_geo_json(request):
+def bus_stops_geo_json(request):
     bus_stop_data = ddba.get_all_bus_stops()
 
     geo_json = {
