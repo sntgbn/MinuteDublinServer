@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.shortcuts import render
 import requests
@@ -9,7 +7,7 @@ from django.http import HttpResponse
 from xml.etree import ElementTree
 from django.http import JsonResponse
 # dynamodb access
-import Database.dynamodb_access as ddba
+import dynamodb.dynamodb_access as ddba
 
 
 def train(request):
@@ -40,9 +38,6 @@ def train(request):
 
 
 def train_geo_json(request):
-
-    response = requests.get("http://api.irishrail.ie/realtime/realtime.asmx/getAllStationsXML")
-    root = ElementTree.fromstring(response.content)
 
     station_data = ddba.get_all_train_stops()
 
