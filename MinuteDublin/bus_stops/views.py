@@ -39,7 +39,7 @@ def bus_stops_geo_json(request):
           "type": "Feature",
           "geometry": {
             "type": "Point",
-            "coordinates": [float(bus_stop["latitude"]), float(bus_stop["longitude"])]
+            "coordinates": [float(bus_stop["longitude"]), float(bus_stop["latitude"])]
           },
           "properties": {
             "name": bus_stop["name"],

@@ -21,7 +21,7 @@ def train(request):
           "type": "Feature",
           "geometry": {
             "type": "Point",
-            "coordinates": [float(train["latitude"]), float(train["longitude"])]
+            "coordinates": [ float(train["longitude"]), float(train["latitude"])]
           },
           "properties": {
             "code": train["code"],
