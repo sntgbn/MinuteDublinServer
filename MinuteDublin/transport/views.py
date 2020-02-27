@@ -6,48 +6,34 @@ import json
 from django.http import HttpResponse
 from xml.etree import ElementTree
 from django.http import JsonResponse
+import dynamodb.dynamodb_access as ddba
 
 
 def train(request):
-    # response = requests.get('http://api.irishrail.ie/realtime/realtime.asmx/getAllStationsXML')
-    # root = ElementTree.fromstring(response.content)
-    #
-    # station_data = []
-    #
-    # for station in root:
-    #     station_object = {}
-    #     for station_info in station:
-    #         content = station_info.text
-    #         tag = station_info.tag.replace("{http://api.irishrail.ie/realtime/}", "")
-    #         tag = tag.replace("Station", "")
-    #         tag = tag.lower()
-    #         if tag == "alias":
-    #             continue
-    #         station_object[tag] = content
-    #
-    #     station_object["type"] = "train"
-    #     station_data.append(station_object)
+    trains = ddba.get_all_trains()
 
-    trains = []
-    base_train_request = "http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByCodeXML?StationCode="
-    # for station in station_data:
-    train_object = {}
-    response = requests.get(base_train_request+"PERSE")
-    root = ElementTree.fromstring(response.content)
+    geo_json = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    for train in trains:
+        stop = {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [float(train["latitude"]), float(train["longitude"])]
+          },
+          "properties": {
+            "code": train["code"],
+            "id": train["id"],
+            "timestamp": train["time_fetched"],
+            "direction": train["direction"],
+            "type":"train",
+          }
+        }
+        geo_json["features"].append(stop)
 
-    for train in root:
-        train_object = {}
-        for train_info in train:
-            tag = train_info.tag.replace("{http://api.irishrail.ie/realtime/}", "")
-            content = train_info.text
-            tag = tag.lower()
-            train_object[tag] = content
-            print(tag, content);
-
-        trains.append(train_object)
-
-
-    return JsonResponse(trains, safe=False, json_dumps_params={'indent': 2})
+    return JsonResponse(geo_json, safe=False, json_dumps_params={'indent': 2})
 
 
 def transport(request):

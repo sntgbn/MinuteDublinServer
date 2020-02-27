@@ -102,6 +102,10 @@ def get_train_stop(key_name, key_value):
 def get_all_train_stops():
     return __read_all_table_items__('TrainStops')
 
+def get_all_trains():
+    return __read_all_table_items__('TrainTransports')
+
+
 def delete_train_stop(key_name, key_value):
     response = __delete_item__(table_name='TrainStops', key_name=key_name,\
                                key_value=key_value)
