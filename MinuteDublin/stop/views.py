@@ -50,7 +50,7 @@ def train_geo_json(request):
           "type": "Feature",
           "geometry": {
             "type": "Point",
-            "coordinates": [float(station["latitude"]), float(station["longitude"])]
+            "coordinates": [float(station["longitude"]), float(station["latitude"])]
           },
           "properties": {
             "name": station["name"],
