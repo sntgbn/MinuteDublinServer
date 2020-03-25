@@ -1,0 +1,8 @@
+# Health Centres
+https://data.smartdublin.ie/dataset/c5ebc2cf-6047-41cd-aef6-79cc1aef7fe4/resource/a166ddac-2e6e-4582-b546-7a626dcb8778/download/fcchealthcentresp20111201-2134.xml
+
+# Garda Stations
+http://data.fingal.ie/datasets/xml/Garda_Stations.xml
+
+# Fire Stations
+https://data.smartdublin.ie/dataset/4f02d0c7-7091-4339-ba3a-20232d33e357/resource/eb12cb99-695d-4983-bc20-a5856463bb36/download/fccfirestationsp20111201-2134.xml

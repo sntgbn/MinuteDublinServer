@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-tables>
+<Fire_Stations-table>
+<Fire_Stations>
+<Name>Balbriggan Fire Station</Name>
+<Address1>Balbriggan Enterprise and Trade Centre</Address1>
+<Address2>Harry Reynolds Road</Address2>
+<Address3>Balbriggan</Address3>
+<Address4>Co. Dublin</Address4>
+<Phone>+353 1 6734000</Phone>
+<Email>fire@dublincity.ie</Email>
+<Website>http://www.dublincity.ie/WaterWasteEnvironment/DublinFireBrigade/Pages/DublinCityFireBrigade.aspx</Website>
+<Fire_Service>Dublin Fire Brigade - Foxtrot District</Fire_Service>
+<LAT>53.6058413136388</LAT>
+<LONG>-6.18662871083347</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Skerries Fire Station</Name>
+<Address1>Quay Street</Address1>
+<Address2>Skerries</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 6734000</Phone>
+<Email>fire@dublincity.ie</Email>
+<Website>http://www.dublincity.ie/WaterWasteEnvironment/DublinFireBrigade/Pages/DublinCityFireBrigade.aspx</Website>
+<Fire_Service>Dublin Fire Brigade - Foxtrot District</Fire_Service>
+<LAT>53.5813066884718</LAT>
+<LONG>-6.10872700821456</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Swords Fire Station</Name>
+<Address1>Balheary Road</Address1>
+<Address2>Swords</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 6734000</Phone>
+<Email>fire@dublincity.ie</Email>
+<Website>http://www.dublincity.ie/WaterWasteEnvironment/DublinFireBrigade/Pages/DublinCityFireBrigade.aspx</Website>
+<Fire_Service>Dublin Fire Brigade - Foxtrot District</Fire_Service>
+<LAT>53.4645576073668</LAT>
+<LONG>-6.21943763138757</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Finglas Fire Station</Name>
+<Address1>Mellowes Road</Address1>
+<Address2>Finglas</Address2>
+<Address3>Dublin 11</Address3>
+<Address4></Address4>
+<Phone>+353 1 6734000</Phone>
+<Email>fire@dublincity.ie</Email>
+<Website>http://www.dublincity.ie/WaterWasteEnvironment/DublinFireBrigade/Pages/DublinCityFireBrigade.aspx</Website>
+<Fire_Service>Dublin Fire Brigade - Foxtrot District</Fire_Service>
+<LAT>53.3901386803473</LAT>
+<LONG>-6.30354804829119</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Dublin Airport Fire Station</Name>
+<Address1>Dublin Airport</Address1>
+<Address2>Cloghran</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone></Phone>
+<Email></Email>
+<Website></Website>
+<Fire_Service>Dublin Airport Fire and Rescue Service</Fire_Service>
+<LAT>53.4271564938162</LAT>
+<LONG>-6.26235674039067</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Blanchardstown Fire Station</Name>
+<Address1>Clonsilla Road</Address1>
+<Address2>Blanchardstown</Address2>
+<Address3>Dublin 15</Address3>
+<Address4></Address4>
+<Phone>+353 1 6734000</Phone>
+<Email>fire@dublincity.ie</Email>
+<Website>http://www.dublincity.ie/WaterWasteEnvironment/DublinFireBrigade/Pages/DublinCityFireBrigade.aspx</Website>
+<Fire_Service>Dublin Fire Brigade - Charlie District</Fire_Service>
+<LAT>53.3846445244494</LAT>
+<LONG>-6.39583152247402</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Kilbarrack Fire Station</Name>
+<Address1>Tonlegee Road</Address1>
+<Address2>Kilbarrack</Address2>
+<Address3>Dublin 5</Address3>
+<Address4></Address4>
+<Phone>+353 1 6734000</Phone>
+<Email>fire@dublincity.ie</Email>
+<Website>http://www.dublincity.ie/WaterWasteEnvironment/DublinFireBrigade/Pages/DublinCityFireBrigade.aspx</Website>
+<Fire_Service>Dublin Fire Brigade - Delta District</Fire_Service>
+<LAT>53.3907540955929</LAT>
+<LONG>-6.16826846946239</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Leixlip Fire Station</Name>
+<Address1>Mill Lane</Address1>
+<Address2>Leixlip</Address2>
+<Address3>Co. Kildare</Address3>
+<Address4></Address4>
+<Phone>+353 45 431370</Phone>
+<Email>cfo@kildarecoco.ie</Email>
+<Website>http://www.kildare.ie/countycouncil/FireServices/index.html</Website>
+<Fire_Service>Kildare Fire and Rescue Service</Fire_Service>
+<LAT>53.3644059803083</LAT>
+<LONG>-6.48377566184389</LONG>
+</Fire_Stations>
+<Fire_Stations>
+<Name>Ashbourne Fire Station</Name>
+<Address1>Rath Cross</Address1>
+<Address2>Ashbourne</Address2>
+<Address3>Co. Meath</Address3>
+<Address4></Address4>
+<Phone>+353 46 9051068</Phone>
+<Email></Email>
+<Website>http://www.meath.ie/LocalAuthorities/FireDepartment/</Website>
+<Fire_Service>Meath Fire Service</Fire_Service>
+<LAT>53.5205958386969</LAT>
+<LONG>-6.41114636923497</LONG>
+</Fire_Stations>
+</Fire_Stations-table>
+</xml-tables>

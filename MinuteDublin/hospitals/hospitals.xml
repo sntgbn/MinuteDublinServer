@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-tables>
+<Health_Centres-table>
+<Health_Centres>
+<Name>Balbriggan Health Centre</Name>
+<Address1>Hampton Street</Address1>
+<Address2>Balbriggan</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8834906</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.6070816624765</LAT>
+<LONG>-6.17914789030531</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Oldtown Health Centre</Name>
+<Address1>Clonmethan</Address1>
+<Address2>Oldtown</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8433234</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.518343736284</LAT>
+<LONG>-6.31786497026097</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Lusk Health Centre</Name>
+<Address1>Main Street</Address1>
+<Address2>Lusk</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8040016</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.5266512075073</LAT>
+<LONG>-6.16588701726975</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Rush Health Centre</Name>
+<Address1>41 Lower Main Street</Address1>
+<Address2>Rush</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8437463</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.5216163327515</LAT>
+<LONG>-6.08802172653303</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Donabate Health Centre</Name>
+<Address1>St. Patrick's Terrace</Address1>
+<Address2>Donabate</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8436079</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.4856288305022</LAT>
+<LONG>-6.14738738879614</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Swords Health Centre</Name>
+<Address1>Bridge Street</Address1>
+<Address2>Swords</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8902200</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.4598336950064</LAT>
+<LONG>-6.22173807230161</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Portmarnock Health Centre</Name>
+<Address1>Strand Centre</Address1>
+<Address2>Strand Road</Address2>
+<Address3>Portmarnock</Address3>
+<Address4>Co. Dublin</Address4>
+<Phone>+353 1 8460311</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.4208793436817</LAT>
+<LONG>-6.13887167368603</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Skerries Health Centre</Name>
+<Address1>Thomas Hand Street</Address1>
+<Address2>Skerries</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8494862</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.579133730272</LAT>
+<LONG>-6.11055545882508</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Malahide Health Centre</Name>
+<Address1>New Street</Address1>
+<Address2>Malahide</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8452076</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.4510016583577</LAT>
+<LONG>-6.15386783556286</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Baldoyle Health Centre</Name>
+<Address1>Willie Nolan Road</Address1>
+<Address2>Baldoyle</Address2>
+<Address3>Dublin 13</Address3>
+<Address4></Address4>
+<Phone>+353 1 8324066</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3987842003782</LAT>
+<LONG>-6.12897324350122</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Howth Health Centre</Name>
+<Address1>Main Street</Address1>
+<Address2>Howth</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 8322984</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3860117570648</LAT>
+<LONG>-6.0650573975448</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Corduff Health Centre</Name>
+<Address1>Curduff Green</Address1>
+<Address2>Blanchardstown</Address2>
+<Address3>Dublin 15</Address3>
+<Address4></Address4>
+<Phone>+353 1 8211131</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3975843112064</LAT>
+<LONG>-6.37636466093761</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Roselawn Health Centre</Name>
+<Address1>Roselawn Road</Address1>
+<Address2>Castleknock</Address2>
+<Address3>Dublin 15</Address3>
+<Address4></Address4>
+<Phone>+353 1 8212666</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3842732608505</LAT>
+<LONG>-6.38230912071703</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Hartstown Health Centre</Name>
+<Address1>Cherryfield Lawns</Address1>
+<Address2>Hartstown</Address2>
+<Address3>Dublin 15</Address3>
+<Address4></Address4>
+<Phone></Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3923895984864</LAT>
+<LONG>-6.42108451513161</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Mountview Health Centre</Name>
+<Address1>Shelerin Road</Address1>
+<Address2>Clonsilla</Address2>
+<Address3>Dublin 15</Address3>
+<Address4></Address4>
+<Phone>+353 1 8210703</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3893005729816</LAT>
+<LONG>-6.40851387351025</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Damastown Health Centre</Name>
+<Address1>Damastown Industrial Estate</Address1>
+<Address2>Mulhuddart</Address2>
+<Address3>Dublin 15</Address3>
+<Address4></Address4>
+<Phone>+353 1 8694600</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.410357896662</LAT>
+<LONG>-6.40894143574284</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Ashbourne Health Centre</Name>
+<Address1>Frederick Street</Address1>
+<Address2>Ashbourne</Address2>
+<Address3>Co. Meath</Address3>
+<Address4></Address4>
+<Phone>+353 1 8350535</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.5139172873289</LAT>
+<LONG>-6.40266041768123</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Dunboyne Health Centre</Name>
+<Address1>Dunboyne</Address1>
+<Address2>Co. Meath</Address2>
+<Address3></Address3>
+<Address4></Address4>
+<Phone></Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.416269478796</LAT>
+<LONG>-6.47232190726006</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Leixlip Health Centre</Name>
+<Address1>Main Street</Address1>
+<Address2>Leixlip</Address2>
+<Address3>Co. Kildare</Address3>
+<Address4></Address4>
+<Phone>+353 1 6244931</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3636654612126</LAT>
+<LONG>-6.48992446656295</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Lucan Health Centre</Name>
+<Address1>1A Sarsfield Park</Address1>
+<Address2>Lucan</Address2>
+<Address3>Co. Dublin</Address3>
+<Address4></Address4>
+<Phone>+353 1 6281395</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3568187934291</LAT>
+<LONG>-6.44820116573448</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Wellmount Health Centre</Name>
+<Address1>Wellmount Park</Address1>
+<Address2>Finglas</Address2>
+<Address3>Dublin 11</Address3>
+<Address4></Address4>
+<Phone>+353 1 8346119</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3853626110425</LAT>
+<LONG>-6.31136194942285</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Ballygall Health Centre</Name>
+<Address1>Seamus Ennis Road</Address1>
+<Address2>Finglas</Address2>
+<Address3>Dublin 11</Address3>
+<Address4></Address4>
+<Phone>+353 1 8342003</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3901927947785</LAT>
+<LONG>-6.29634840344212</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Ballymun Health Centre</Name>
+<Address1>Ballymun Health Care Facility</Address1>
+<Address2>Civic Offices</Address2>
+<Address3>Ballymun Road</Address3>
+<Address4>Dublin 11</Address4>
+<Phone>+353 1 8467000</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3955275266125</LAT>
+<LONG>-6.2635216607018</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Darndale Health Centre</Name>
+<Address1>Darndale Primary Care Centre</Address1>
+<Address2>Darndale/Belcamp Village Centre</Address2>
+<Address3>Darndale</Address3>
+<Address4>Dublin 17</Address4>
+<Phone>+353 1 8771550</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.4013520275723</LAT>
+<LONG>-6.19395559162637</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Kilbarrack Health Centre</Name>
+<Address1>Foxfield Crescent</Address1>
+<Address2>Kilbarrack</Address2>
+<Address3>Dublin 5</Address3>
+<Address4></Address4>
+<Phone>+353 1 8399500</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.3849029970605</LAT>
+<LONG>-6.15523944359825</LONG>
+</Health_Centres>
+<Health_Centres>
+<Name>Larkhill Health Centre</Name>
+<Address1>Collins Avenue Extension</Address1>
+<Address2>Dublin 9</Address2>
+<Address3></Address3>
+<Address4></Address4>
+<Phone>+353 1 8373796</Phone>
+<Email></Email>
+<Website></Website>
+<LAT>53.384766032412</LAT>
+<LONG>-6.25031257604399</LONG>
+</Health_Centres>
+</Health_Centres-table>
+</xml-tables>
