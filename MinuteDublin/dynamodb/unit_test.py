@@ -71,6 +71,16 @@ class minuteDublinStops(unittest.TestCase):
         dummy_hospital = ddba.delete_gardastation('garda')
         print('Test A 9 - Successfully deleted dummy garda station from DB')
 
+    def test_a_10_put_dummy_event(self):
+        print('Test A 8 - Putting dummy event on DB')
+        dummy_hospital = ddba.create_event(0, 'emergency', 15, 15)
+        print('Test A 8 - Successfully created dummy event on DB')
+
+    def test_a_9_put_dummy_gardastation(self):
+        print('Test A 9 - Deleting dummy event from DB')
+        dummy_hospital = ddba.delete_event(0)
+        print('Test A 9 - Successfully deleted dummy event from DB')
+
 
 if __name__ == '__main__': 
     unittest.main() 

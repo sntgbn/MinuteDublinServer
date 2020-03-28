@@ -130,8 +130,8 @@ def delete_hospital(name):
 ##        FIRE STATIONS        ##
 #################################
 def create_firestation(name, latitude, longitude):
-    hospital = {'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
-    db_return = __add_item__(table_name='FireStations', table_item=hospital)
+    fire_station = {'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
+    db_return = __add_item__(table_name='FireStations', table_item=fire_station)
     return db_return
 
 def get_all_firestations():
@@ -146,8 +146,8 @@ def delete_firestation(name):
 ##       GARDA STATIONS        ##
 #################################
 def create_gardastation(name, latitude, longitude):
-    hospital = {'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
-    db_return = __add_item__(table_name='GardaStations', table_item=hospital)
+    garda_station = {'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
+    db_return = __add_item__(table_name='GardaStations', table_item=garda_station)
     return db_return
 
 def get_all_gardastations():
@@ -157,6 +157,23 @@ def delete_gardastation(name):
     response = __delete_item__(table_name='GardaStations', key_name='name',\
                                key_value=name)
     return response
+
+#################################
+##             EVENT           ##
+#################################
+def create_event(event_id, name, latitude, longitude):
+    event = {'event_id':event_id, 'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
+    db_return = __add_item__(table_name='Events', table_item=event)
+    return db_return
+
+def get_all_events():
+    return __read_all_table_items__('Events')
+
+def delete_event(event_id):
+    response = __delete_item__(table_name='Events', key_name='event_id',\
+                               key_value=event_id)
+    return response
+
 
 #################################
 ##              LUAS           ##
