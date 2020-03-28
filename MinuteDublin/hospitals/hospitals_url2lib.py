@@ -10,6 +10,5 @@ hospitals = hospitals_tree.getroot()[0]
 for hospital in hospitals:
     print("_____________________________________________")
     print("Name: " + hospital[0].text) # Name
-    print("Phone: " + str(hospital[5].text)) # Phone
     print("LAT: " + hospital[-2].text) # LAT
     print("LONG: " + hospital[-1].text) # LONG

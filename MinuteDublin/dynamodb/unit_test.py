@@ -41,56 +41,36 @@ class minuteDublinStops(unittest.TestCase):
         print('Test A 5 - Successfully created dummy TRAIN stop object for DB')
         self.assertTrue(True)
 
-    # def test_a_6_get_dummy_stop_lua(self):
-    #     print('Test A 6 - Reading dummy TRAIN stop object for DB')
-    #     response = ddba.get_train_stop(key_name='id', key_value=71411)
-    #     self.assertNotEqual(first=response.get('Item'), second=None, msg='Test A 6 - Dummy TRAIN stop object NOT FOUND in DB')
-    #     print('Test A 6 - Dummy TRAIN stop object FOUND in DB')
+    def test_a_6_put_dummy_hospital(self):
+        print('Test A 6 - Putting dummy hospital on DB')
+        dummy_hospital = ddba.create_hospital('hospi', 15, 15)
+        print('Test A 6 - Successfully created dummy hospital object for DB')
 
-    # def test_b_1_put_dummy_transport_bus(self):
-    #     print('Test B 1 - Creating dummy BUS transport object for DB')
-    #     dummy_transport = ddba.create_transport_item(transport_id=1993, name='Ottos Bus',\
-    #                                             type= 'bus', route='Green', latitude= 53.3498,\
-    #                                             longitude= -6.2603, last_stop_time='00:30')
-    #     response = ddba.add_item(table_name='BusTransports', table_item=dummy_transport)
-    #     print('Test B 1 - Successfully created dummy BUS stop object for DB')
-    #     self.assertTrue(True)
+    def test_a_7_put_dummy_hospital(self):
+        print('Test A 7 - Deleting dummy hospital from DB')
+        dummy_hospital = ddba.delete_hospital('hospi')
+        print('Test A 7 - Successfully deleted dummy hospital from DB')
 
-    # def test_b_2_get_dummy_transport_bus(self):
-    #     print('Test B 2 - Reading dummy BUS transport object for DB')
-    #     response = ddba.read_table_item(table_name='BusTransports', key_name='id', key_value=1993)
-    #     self.assertNotEqual(first=response.get('Item'), second=None, msg='Test B 2 - Dummy BUS transport object NOT FOUND in DB')
-    #     print('Test B 2 - Dummy BUS transport object FOUND in DB')
+    def test_a_8_put_dummy_firestation(self):
+        print('Test A 8 - Putting dummy fire station on DB')
+        dummy_hospital = ddba.create_firestation('fire', 15, 15)
+        print('Test A 8 - Successfully created dummy fire station object on DB')
 
-    # def test_b_3_put_dummy_transport_lua(self):
-    #     print('Test B 1 - Creating dummy transport object for DB')
-    #     dummy_transport = ddba.create_transport_item(transport_id=121, name='PARNELLLUA',\
-    #                                             type= 'lua', route='Green', latitude= 53.3498,\
-    #                                             longitude= -6.2603, last_stop_time='00:30')
-    #     response = ddba.add_item(table_name='LuaTransports', table_item=dummy_transport)
-    #     print('Test B 1 - Successfully created dummy LUA stop object for DB')
-    #     self.assertTrue(True)
+    def test_a_9_put_dummy_firestation(self):
+        print('Test A 9 - Deleting dummy fire station from DB')
+        dummy_hospital = ddba.delete_firestation('fire')
+        print('Test A 9 - Successfully deleted dummy fire station from DB')
 
-    # def test_b_4_get_dummy_transport_lua(self):
-    #     print('Test B 2 - Reading dummy LUA transport object for DB')
-    #     response = ddba.read_table_item(table_name='LuaTransports', key_name='id', key_value=121)
-    #     self.assertNotEqual(first=response.get('Item'), second=None, msg='Test B 2 - Dummy LUA transport object NOT FOUND in DB')
-    #     print('Test B 2 - Dummy LUA transport object FOUND in DB')
+    def test_a_8_put_dummy_gardastation(self):
+        print('Test A 8 - Putting dummy fire station on DB')
+        dummy_hospital = ddba.create_gardastation('garda', 15, 15)
+        print('Test A 8 - Successfully created dummy garda station object for DB')
 
-    # def test_b_5_put_dummy_transport_lua(self):
-    #     print('Test B 5 - Creating dummy TRAIN transport object for DB')
-    #     dummy_transport = ddba.create_transport_item(transport_id=121, name='PARNELLLUA',\
-    #                                             type= 'train', route='Green', latitude= 53.3498,\
-    #                                             longitude= -6.2603, last_stop_time='00:30')
-    #     response = ddba.add_item(table_name='TrainTransports', table_item=dummy_transport)
-    #     print('Test B 5 - Successfully created dummy TRAIN stop object for DB')
-    #     self.assertTrue(True)
+    def test_a_9_put_dummy_gardastation(self):
+        print('Test A 9 - Deleting dummy fire station from DB')
+        dummy_hospital = ddba.delete_gardastation('garda')
+        print('Test A 9 - Successfully deleted dummy garda station from DB')
 
-    # def test_b_6_get_dummy_transport_train(self):
-    #     print('Test B 6 - Reading dummy TRAIN transport object for DB')
-    #     response = ddba.read_table_item(table_name='TrainTransports', key_name='id', key_value=121)
-    #     self.assertNotEqual(first=response.get('Item'), second=None, msg='Test B 6 - Dummy TRAIN transport object NOT FOUND in DB')
-    #     print('Test B 6 - Dummy TRAIN transport object FOUND in DB')
 
 if __name__ == '__main__': 
     unittest.main() 

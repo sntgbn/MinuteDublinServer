@@ -10,6 +10,5 @@ firestations = firestations_tree.getroot()[0]
 for firestation in firestations:
     print("_____________________________________________")
     print("Name: " + firestation[0].text) # Name
-    print("Phone: " + str(firestation[5].text)) # Phone
     print("LAT: " + firestation[-2].text) # LAT
     print("LONG: " + firestation[-1].text) # LONG

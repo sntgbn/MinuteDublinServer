@@ -105,13 +105,58 @@ def get_all_train_stops():
 def get_all_trains():
     return __read_all_table_items__('TrainTransports')
 
-
 def delete_train_stop(key_name, key_value):
     response = __delete_item__(table_name='TrainStops', key_name=key_name,\
                                key_value=key_value)
     return response
 
-# def create_train()
+#################################
+##          HOSPITALS          ##
+#################################
+def create_hospital(name, latitude, longitude):
+    hospital = {'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
+    db_return = __add_item__(table_name='Hospitals', table_item=hospital)
+    return db_return
+
+def get_all_hospitals():
+    return __read_all_table_items__('Hospitals')
+
+def delete_hospital(name):
+    response = __delete_item__(table_name='Hospitals', key_name='name',\
+                               key_value=name)
+    return response
+
+#################################
+##        FIRE STATIONS        ##
+#################################
+def create_firestation(name, latitude, longitude):
+    hospital = {'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
+    db_return = __add_item__(table_name='FireStations', table_item=hospital)
+    return db_return
+
+def get_all_firestations():
+    return __read_all_table_items__('FireStations')
+
+def delete_firestation(name):
+    response = __delete_item__(table_name='FireStations', key_name='name',\
+                               key_value=name)
+    return response
+
+#################################
+##       GARDA STATIONS        ##
+#################################
+def create_gardastation(name, latitude, longitude):
+    hospital = {'name':name, 'latitude':str(latitude), 'longitude':str(longitude)}
+    db_return = __add_item__(table_name='GardaStations', table_item=hospital)
+    return db_return
+
+def get_all_gardastations():
+    return __read_all_table_items__('GardaStations')
+
+def delete_gardastation(name):
+    response = __delete_item__(table_name='GardaStations', key_name='name',\
+                               key_value=name)
+    return response
 
 #################################
 ##              LUAS           ##
@@ -132,6 +177,9 @@ def delete_lua_stop(key_name, key_value):
                                key_value=key_value)
     return response
 
+#################################
+##            POLYGON          ##
+#################################
 def is_inside_polygon(latitude, longitude, poly):
     c = False
     i = -1
