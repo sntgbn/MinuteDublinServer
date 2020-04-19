@@ -44,7 +44,7 @@ def bus_stops_geo_json(request):
           "properties": {
             "name": bus_stop["name"],
             "id": bus_stop["id"],
-            "timestamp": bus_stop["time_fetched"],
+#             "timestamp": bus_stop["time_fetched"],
             "type":"train",
           }
         }
