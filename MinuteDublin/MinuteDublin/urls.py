@@ -20,7 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('stop/', include('stop.urls')),
     path('transport/', include('transport.urls')),
-    path('bus_stops/', include('bus_stops.urls'))
+    path('bus_stops/', include('bus_stops.urls')),
     path('report/', include('report.urls'))
 
 ]
