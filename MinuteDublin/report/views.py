@@ -20,7 +20,7 @@ def report(request):
 
     print(last_id+1, body)
 
-    return
+    return JsonResponse(body)
 
 
 def fetch_reports(request):
