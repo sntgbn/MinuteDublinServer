@@ -5,8 +5,20 @@ from django.shortcuts import render
 
 import dynamodb.dynamodb_access as ddba
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def report(request):
+    last_id = 0
+    reports = ddba.get_all_reports()
+
+    for report in reports:
+        if int(report["id"]) > last_id:
+            last_id = int(report["id"])
+
+    body = request.body
+
+    print(last_id+1, body)
 
     return
 
