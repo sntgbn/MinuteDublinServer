@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-
+import json
 import dynamodb.dynamodb_access as ddba
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -16,7 +16,7 @@ def report(request):
         if int(report["id"]) > last_id:
             last_id = int(report["id"])
 
-    body = request.body
+    body = json.loads(request.body)
 
     print(last_id+1, body)
 
