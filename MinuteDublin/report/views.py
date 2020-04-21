@@ -18,7 +18,9 @@ def report(request):
 
     body = json.loads(request.body)
 
-    print(last_id+1, body)
+    # print(last_id+1, body)
+    body["id"] = str(last_id+1)
+    db_return = ddba.__add_item__(table_name='reports', table_item=body)
 
     return JsonResponse(body)
 
