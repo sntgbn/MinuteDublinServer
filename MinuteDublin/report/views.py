@@ -11,7 +11,7 @@ def report(request):
     return
 
 
-def fetch_report(request):
+def fetch_reports(request):
     reports = ddba.get_all_reports()
 
     geo_json = {
