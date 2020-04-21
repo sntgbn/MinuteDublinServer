@@ -106,7 +106,7 @@ def get_all_trains():
     return __read_all_table_items__('TrainTransports')
 
 def get_all_reports():
-    return __read_all_table_items__('report')
+    return __read_all_table_items__('reports')
 
 
 def delete_train_stop(key_name, key_value):
