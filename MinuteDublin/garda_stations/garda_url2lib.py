@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import dynamodb.dynamodb_access as ddba
 import urllib.request
 # http://data.fingal.ie/datasets/xml/Garda_Stations.xml
 garda_stations = 'garda.xml'
