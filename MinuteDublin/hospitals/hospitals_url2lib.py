@@ -1,13 +1,17 @@
 import xml.etree.ElementTree as ET
 import urllib.request
 import dynamodb.dynamodb_access as ddba
+import os
 
 
 def parse_file():
     # https://data.smartdublin.ie/dataset/c5ebc2cf-6047-41cd-aef6-79cc1aef7fe4/resource/a166ddac-2e6e-4582-b546-7a626dcb8778/download/fcchealthcentresp20111201-2134.xml
-    hospitals = 'hospitals.xml'
+    xml_file = 'hospitals.xml'
 
-    hospitals_tree = ET.parse(hospitals)
+    here = os.path.dirname(os.path.abspath(__file__))
+    filename = os.path.join(here, xml_file)
+
+    hospitals_tree = ET.parse(filename)
     hospitals = hospitals_tree.getroot()[0]
 
     for hospital in hospitals:

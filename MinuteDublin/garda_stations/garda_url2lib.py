@@ -1,12 +1,16 @@
 import xml.etree.ElementTree as ET
 import dynamodb.dynamodb_access as ddba
 import urllib.request
+import os
 
 def parse_file():
     # http://data.fingal.ie/datasets/xml/Garda_Stations.xml
-    garda_stations = 'garda.xml'
+    xml_file = 'garda.xml'
 
-    garda_tree = ET.parse(garda_stations)
+    here = os.path.dirname(os.path.abspath(__file__))
+    filename = os.path.join(here, xml_file)
+
+    garda_tree = ET.parse(filename)
     stations = garda_tree.getroot()[0]
 
     for station in stations:
