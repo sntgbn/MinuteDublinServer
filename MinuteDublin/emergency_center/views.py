@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 import fire_stations.firestations_url2lib as fire
-import garda_stations.garda_url2lib as garda
+# import garda_stations.garda_url2lib as garda
 import hospitals.hospitals_url2lib as hospital
 from django.http import HttpResponse
 
