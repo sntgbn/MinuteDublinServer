@@ -7,7 +7,7 @@ import hospitals.hospitals_url2lib as hospital
 from django.http import HttpResponse
 
 
-def create_all():
+def create_all(request):
     fire.parse_file()
     garda.parse_file()
     hospital.parse_file()
