@@ -12,3 +12,4 @@ for station in stations:
     print("Phone: " + station[4].text) # Phone
     print("LAT: " + station[-2].text) # LAT
     print("LONG: " + station[-1].text) # LONG
+    ddba.create_gardastation(station[0].text, station[-2].text, station[-1].text)

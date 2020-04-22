@@ -66,7 +66,7 @@ class minuteDublinStops(unittest.TestCase):
         dummy_hospital = ddba.create_gardastation('garda', 15, 15)
         print('Test A 8 - Successfully created dummy garda station object for DB')
 
-    def test_a_9_put_dummy_gardastation(self):
+    def test_a_9_delete_dummy_gardastation(self):
         print('Test A 9 - Deleting dummy fire station from DB')
         dummy_hospital = ddba.delete_gardastation('garda')
         print('Test A 9 - Successfully deleted dummy garda station from DB')
